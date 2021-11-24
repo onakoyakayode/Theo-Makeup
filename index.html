@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Theodol Beauty</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Theodol.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Nixie+One&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="container">
+                <nav>
+                    <h1><span>Theodol</span>Beauty</h1>
+                    <a class="toggle" id="toggle-button">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </a>
+
+                    <div class="navbar-links" id="navlist">
+                        <ul> 
+                            <div class="navbar">
+                                <li><a href="#Studio">Studio</a></li>
+                            </div>
+                            <div class="navbar">
+                                <li><a href="#Academy">Academy</a></li>
+                            </div>
+                            <div class="navbar">
+                                <li><a href="#Works">Works</a></li>
+                            </div>
+                            <div class="navbar">
+                                <li><a href="#Contact">Contact</a></li>
+                            </div>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input name="search" type="text" id="text" class="texts" placeholder="search">
+                        <input type="button" class="btn" value="search">
+                    </div>
+                </nav>
+
+                <div class="banner">
+                    <div class="left-column">
+                        <a class="left" href="#Studio">
+                            <h3>Make Up</h3>
+                            <h1>STUDIO</h1>
+                        </a>
+                    </div>
+                    <div class="right-column">
+                        <a href="#Academy" class="right">
+                            <h3>Make Up</h3>
+                            <h1>ACADEMY</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="section2" id="Studio">
+            <div class="container">
+                <div class="section21">
+                    <h1>Make Up Studio</h1>
+                </div>
+                
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="pexels-kei-scampa-3823741.jpg" style="width:100%">
+                    <div class="text">Theodol Main Studio</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="pexels-george-milton-6954133.jpg" style="width:100%">
+                    <div class="text">Theodol Beauty Make Up Stand</div>
+                    </div>
+                
+                    <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="pexels-lucas-pezeta-2328149.jpg" style="width:100%">
+                    <div class="text">Make Up Mirror</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="pexels-lucas-pezeta-2328149.jpg" style="width:100%">
+                        <div class="text">Make Up Mirror</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="pexels-lucas-pezeta-2328149.jpg" style="width:100%">
+                        <div class="text">Make Up Mirror</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="makeup.jpg" style="width:100%">
+                        <div class="text">Make Up Mirror</div>
+                    </div>
+
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section3" id="Academy">
+            <div class="container">
+                <div class="section31">
+                    <h1>Make Up Academy</h1>
+                </div>
+
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+
+                    <!-- Full-width images with number and caption text -->
+                    <div class="mySlide fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="pexels-becerra-govea-photo-5732998.jpg" style="width:100%">
+                    <div class="text">Theodol Students, First day at work.</div>
+                    </div>
+                
+                    <div class="mySlide fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="pexels-kampus-production-6948133.jpg" style="width:100%">
+                    <div class="text">Student trying to get the Afro styles.</div>
+                    </div>
+                
+                    <div class="mySlide fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="pexels-george-milton-6954133.jpg" style="width:100%">
+                    <div class="text">When you are trying the Eye lashes for the !st time.</div>
+                    </div>
+
+                    <div class="mySlide fade">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="pexels-anthony-shkraba-5178024.jpg" style="width:100%">
+                        <div class="text">Creating the color the lips need.</div>
+                    </div>
+
+                    <div class="mySlide fade">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="pexels-godisable-jacob-901964.jpg" style="width:100%">
+                        <div class="text">Students Graduating at Theodol</div>
+                    </div>
+
+                    <div class="mySlide fade">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="pexels-kei-scampa-3823741.jpg" style="width:100%">
+                        <div class="text">Make Up Mirror</div>
+                    </div>
+
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlide(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dots" onclick="currentSlides(1)"></span>
+                    <span class="dots" onclick="currentSlides(2)"></span>
+                    <span class="dots" onclick="currentSlides(3)"></span>
+                    <span class="dots" onclick="currentSlides(4)"></span>
+                    <span class="dots" onclick="currentSlides(5)"></span>
+                    <span class="dots" onclick="currentSlides(6)"></span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section4">
+            <div class="container" id="Works">
+                <div class="section41">
+                    <h1>Works</h1>
+                </div>
+
+                <div class="images">
+                    <div>
+                        <img class="img11" src="pexels-agora-play-3014062.jpg" alt="img11">
+                        <img class="img12" src="makeup.jpg" alt="img12">
+                        <img class="img13" src="pexels-shiny-diamond-3373745.jpg" alt="img13">
+                    </div>
+                    <div>
+                        <img class="img21" src="pexels-shiny-diamond-3373746.jpg" alt="img21">
+                        <img class="img22" src="pexels-lucas-pezeta-2328149.jpg" alt="img22">
+                        <img class="img23" src="pexels-kampus-production-6948133.jpg" alt="img23">
+                    </div>
+                    <div>
+                        <img class="img31" src="pexels-george-milton-6954133.jpg" alt="img31">
+                        <img class="img32" src="pexels-anthony-shkraba-5178024.jpg" alt="img32">
+                        <img class="img33" src="pexels-kei-scampa-3823741.jpg" alt="img33">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section5">
+            <div class="container" id="Contact">
+                <div class="section51">
+                    <h1>Contact</h1>
+                    <div class="contact">
+                        <div class="form">
+                            <form>
+                                <div id="name">
+                                    <label>Full-Name:</label>
+                                    <br>
+                                    <input type="text" id="Full-Name" placeholder="Enter Full Name">
+                                </div>
+                                <div id="mail">
+                                    <label>E-mail:</label>
+                                    <br>
+                                    <input type="email" id="email" placeholder="Enter E-mail">
+                                </div>
+                                <div id="phone">
+                                    <label>Phone No:</label>
+                                    <br>
+                                    <input type="tel" id="phone" placeholder="Enter Phone Number">
+                                </div>
+                                <div id="message">
+                                    <label>Message:</label>
+                                    <br>
+                                    <textarea id="messages" placeholder="Please leave a message...."></textarea>
+                                </div>
+                                <div class="button">
+                                    <button type="submit" id="submit">Submit</button>
+                                    <button type="reset" id="reset">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="vertical-line"></div>
+
+                        <div class="contact-us">
+                            <div class="">
+                                <h2>Contact Us</h2>
+                                <h6>Let's help you bring out more beauty</h6>
+                                <p>For any orders or enquiries please contact us either through our phone number or email. Please provide us 2 weeks notice atleast before the event.</p>
+                                <a class="email-order" href="mailto:theodol@gmail.com">theodol@gmail.com</a>
+                                <address>Mustapha Plaza, Agungi Ajiran Road, Agungi Bus-stop, Lekki, Lagos.</address>
+                                <a class="phone" href="tel:+234-8174146930">Tel:+234-8174146930</a>
+                                <div class="mail-button">
+                                    <button type="button" id="button" class="button">EMAIL US FOR A BOOKING</button>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section6">
+            <div class="container">
+                <div class="section61">
+                    <h1>Social</h1>
+                </div>
+                <div class="social">
+                    <a href="#"><img class="facebook" src="facebook.png" alt="facebook"></a>
+                    <a href="#"><img class="instagram" src="instagram.png" alt="instagram"></a>
+                    <a href="#"><img class="twitter" src="twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container section7">
+                <div>
+                    <h2>Theodol Beauty Place</h2>
+                </div>
+                <div class="foot">
+                    <ul>
+                        <li><a href="#">Academy</a></li>
+                        <li><a href="#">Studio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <ul>
+                        <li><a href="#">Freelancing</a></li>
+                        <li><a href="#">Please call us today</a></li>
+                        <li><a href="#">Join us today</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="copy">
+                <h4>Copyright &copy; Theodol Beauty Place, 2021.</h4>
+                <h4>Developed by <a href="#" class="dev">Onakoya Oluwakayode</a></h4>
+            </div>
+        </footer>
+    </body>
+
+
+
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script src="js.js"></script>
+    <script src="Theodol.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    
+
+
+</html>

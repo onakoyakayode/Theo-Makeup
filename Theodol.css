@@ -1,0 +1,1874 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 85vh;
+    background: linear-gradient( rgba(43, 45, 56, 0.5), rgba(43, 45, 56, 0.5)), url(makeup.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#toggle-button {
+    width: 31px;
+    height: 24px;
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+}
+
+.bar {
+    width: 100%;
+    height: 3px;
+    color: #fff;
+    display: inline-block;
+    background-color: rgb(218, 218, 218);
+}
+
+.container {
+    width: 100%;
+    padding: 30px 60px;
+}
+
+span {
+    color: #f19;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+
+nav h1 {
+    font-family: 'Nixie One', cursive;
+    color: rgb(218, 218, 218);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-links ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0px 50px;
+    text-transform: uppercase;
+}
+
+.navbar-links li {
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 15px;
+    padding: 0px 10px;
+    display: flex;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    font-family: 'Nixie One', cursive;
+    font-weight: 900;
+    color: rgb(218, 218, 218);
+    font-size: 20px;
+    position: relative;
+    display: flex;
+}
+
+.navbar-links li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #f19;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70%;
+    transition: 0.5s;
+}
+
+.navbar-links li a:hover::after {
+    width: 100%;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.texts {
+    outline: none;
+    opacity: 0.7;
+    padding: 5px 10px;
+    width: 100%;
+    background-color: rgba(43, 45, 56, 0.5);
+    color: #fff;
+    font-size: 14px;
+}
+
+input[type=button] {
+    padding: 6px 20px;
+    color: #f19;
+    outline: none;
+    background: rgba(43, 45, 56, 0.9);
+    opacity: 0.9;
+    font-family: 'Nixie One', cursive;
+    font-weight: bolder;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.banner {
+    display: flex;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.left-column, .right-column {
+    flex-basis: 50%;
+}
+
+.right-column {
+    width: 100%;
+    text-align: right;
+    margin-right: 20%;
+    transform: translatey(150%);
+    font-family: 'Nixie One', cursive;
+    color: rgb(218, 218, 218);
+    position: relative;
+    animation-name: key;
+    animation-duration: 5s;
+}
+
+.left-column {
+    width: 100%;
+    text-align: left;
+    margin-left: 20%;
+    transform: translatey(150%);
+    font-family: 'Nixie One', cursive;
+    color: rgb(218, 218, 218);
+    position: relative;
+    animation-name: keys;
+    animation-duration: 5s;
+}
+
+@-webkit-keyframes key {
+    from {right: -300px}
+    to {right: 0px}
+}
+
+@keyframes key {
+    from {right: -300px}
+    to {right: 0px}
+}
+
+@-webkit-keyframes keys {
+    from {left: -300px}
+    to {left: 0px}
+}
+
+@keyframes keys {
+    from {left: -300px}
+    to {left: 0px}
+}
+
+
+.right-column h1, .left-column h1 {
+    font-size: 45px;
+}
+
+.right-column h3, .left-column h3 {
+    font-size: 23px;
+}
+
+.left,
+.right {
+    text-decoration: none;
+    color: rgb(218, 218, 218);
+    cursor: pointer;
+}
+
+
+.left::after, .right::after {
+    content: '';
+    border: solid rgb(218, 218, 218);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin: 20px 70px;
+    transition: 0.6s;
+}
+
+.left:hover:after {
+    content: '';
+    border: solid rgb(218, 218, 218);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: translatey(300%);
+}
+
+.right:hover:after {
+    content: '';
+    border: solid rgb(218, 218, 218);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: translatey(300%);
+}
+
+
+/*Section2 */
+
+.section3, .section5 {
+    padding-bottom: 70px;
+    background-color: rgba(0, 107, 55, 0.137);
+}
+
+.section2, .section4 {
+    background-color: #f2f2f2;
+    padding-bottom: 70px;
+}
+
+.section21 h1 {
+    font-family: 'Nixie One', cursive;
+    margin: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section21 h1::after {
+    content: '';
+    width: 15%;
+    height: 3px;
+    background-color: rgb(34, 92, 1);
+    transition: 0.6s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30%;
+}
+
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+  
+/* Hide the images by default */
+.mySlides, .myslide {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    background-color: rgba(14, 14, 14, 0.308);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* The dots/bullets/indicators */
+.dot, .dots {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover,
+.active, .dots:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/*Section3 */
+
+.section31 h1 {
+    font-family: 'Nixie One', cursive;
+    margin: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section31 h1::after {
+    content: '';
+    width: 15%;
+    height: 3px;
+    background-color: rgb(34, 92, 1);
+    transition: 0.6s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30%;
+}
+
+
+.section41 h1 {
+    font-family: 'Nixie One', cursive;
+    margin: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section41 h1::after {
+    content: '';
+    width: 8%;
+    height: 3px;
+    background-color: rgb(34, 92, 1);
+    transition: 0.6s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30%;
+}
+
+
+.images {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+
+.img11, .img12, .img13, .img21, .img22, .img23, .img31, .img32, .img33 {
+    width: 400px;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+.img11, .img33, .img31, .img13 {
+    height: 400px;
+}
+
+.img22 {
+    height: 525px;
+}
+
+
+.section51 h1 {
+    font-family: 'Nixie One', cursive;
+    margin: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.section51 h1::after {
+    content: '';
+    width: 10%;
+    height: 3px;
+    background-color: rgb(34, 92, 1);
+    transition: 0.6s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30%;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.contact-us {
+    width: 50%;
+    text-align: center;
+    padding: 0px 30px;
+}
+
+.contact-us h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.contact-us h2::after {
+    content: '';
+    width: 10%;
+    height: 2px;
+    background-color: rgb(34, 92, 1);
+    transition: 0.6s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20%;
+}
+
+.contact-us h6 {
+    font-size: 17px;
+    font-style: italic;
+    font-family: 'Nixie One', cursive;
+    margin: 25px;
+}
+
+.contact-us p {
+    font-size: 17px;
+    margin: 15px;
+}
+
+.email-order {
+    color: rgb(34, 92, 1);
+    font-family: 'Nixie One', cursive;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+address {
+    margin: 20px;
+    font-size: 1.2rem;
+}
+.phone {
+    color: rgb(34, 92, 1);
+    font-family: 'Nixie One', cursive;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+.mail-button {
+    margin-top: 30px;
+}
+
+#button {
+    padding: 20px 40px;
+    background-color: rgb(34, 92, 1);
+    color: #f2f2f2;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-family: 'Nixie One', cursive;
+    font-size: 15px;
+    font-weight: bolder;
+}
+
+#button:hover {
+    opacity: .9;
+}
+
+.vertical-line {
+    border: 1px dashed rgb(34, 92, 1);
+    height: 400px;
+    margin-left: 25%;
+}
+
+
+form {
+    text-align: justify;
+    align-content: center;
+    width: 220%;
+}
+
+label {
+    font-size: 22px;
+    font-family: 'Playfair Display', serif;
+    text-align: left;
+}
+
+#Full-Name, #email, #phone {
+    width: 100%;
+    padding: 10px 0px;
+    margin-top: 3px;
+}
+
+#messages {
+    width: 100%;
+    padding: 10px 0px;
+}
+
+#name, #mail, #phone, #messages {
+    padding-bottom: 10px;
+    outline: none;
+}
+
+
+#Full-Name::placeholder,
+#email::placeholder,
+#messages::placeholder,
+#phone::placeholder {
+    font-size: 14px;
+    font-family: 'Work Sans', sans-serif;
+    background-color: transparent;
+}
+
+.button {
+    margin-top: 30px;
+}
+
+#submit {
+    padding: 10px 28px;
+    color: #000;
+    background-color: #ff4545;
+    border: 1px solid #ff454569;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+#reset {
+    padding: 10px 28px;
+    background-color: #000;
+    color: #ff4545;
+    font-size: 16px;
+    border: 1px solid #0000003f;
+    font-family: 'Work Sans', sans-serif;
+    border-radius: 10px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.section6 {
+    background-color: #f2f2f2;
+    padding-bottom: 70px;
+}
+
+.section61 h1 {
+    font-family: 'Nixie One', cursive;
+    margin: 40px;
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.section61 h1::after {
+    content: '';
+    width: 7%;
+    height: 3px;
+    background-color: rgb(34, 92, 1);
+    transition: 0.6s;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30%;
+}
+
+.facebook,
+.instagram,
+.twitter {
+    width: 40px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 20px;
+}
+
+
+.facebook:hover,
+.instagram:hover,
+.twitter:hover {
+    width: 38px;
+    opacity: .4;
+}
+.social {
+    text-align: center;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.918);
+    padding-bottom: 5px;
+    color: #f2f2f2;
+}
+
+.section7 h2 {
+    font-family: 'Nixie One', cursive;
+    margin: 20px;
+    font-size: 35px;
+    font-weight: 900;
+    position: relative;
+    margin-bottom: 10px;
+    text-decoration: #ff4545 overline;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 30px 200px;
+}
+
+.foot ul {
+    list-style: none;
+}
+
+.foot ul li {
+    margin: 10px 0px;
+}
+
+.foot ul li a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 15px;
+    font-family: 'Nixie One', cursive;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    font-size: 12px;
+    font-family: 'Nixie One', cursive;
+}
+
+.dev {
+    font-size: 16px;
+    font-weight: 800;
+    color: #ff4545;
+    font-family: 'Nixie One', cursive;
+    text-decoration: none;
+}
+
+
+
+
+
+/*Media Queries*/
+
+@media (max-width: 576px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    #toggle-button {
+        display: flex;
+        width: 27px;
+        height: 21px;
+        color: #fff;
+        position: absolute;
+        top: 1.2rem;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px;
+        color: #fff;
+        display: inline-block;
+        background-color: rgb(218, 218, 218);
+    }
+
+    header {
+        width: 100%;
+        height: 85vh;
+        background: linear-gradient( rgba(43, 45, 56, 0.5), rgba(43, 45, 56, 0.5)), url(makeup.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    span {
+        color: #f19;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    
+    nav h1 {
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .navbar-links ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        text-transform: uppercase;
+        display: none;
+        align-content: center;
+    }
+    
+    #navlist {
+        margin: auto;
+    }
+    
+    .navbar {
+        text-decoration: none;
+        margin: 5% 0px;
+        padding: 5px 0px;
+        list-style: none;
+        letter-spacing: normal;
+        line-height: 20px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        font-family: 'Nixie One', cursive;
+        font-weight: 900;
+        color: rgb(218, 218, 218);
+        font-size: 17px;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .navbar a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: #f19;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -25%;
+        transition: 0.5s;
+    }
+    
+    .navbar a:hover::after {
+        width: 100%;
+    }
+
+    .search {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 75%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .search .btn {
+        width: 100%;
+    }
+
+    .texts {
+        outline: none;
+        opacity: 0.7;
+        padding: 7px 7px;
+        width: 100%;
+        background-color: rgba(43, 45, 56, 0.5);
+        color: #fff;
+        font-size: 13px;
+    }
+   
+   input[type=button] {
+        padding: 7px 14px;
+        color: rgb(218, 218, 218);
+        outline: none;
+        background: rgba(43, 45, 56, 0.9);
+        opacity: 0.9;
+        font-family: 'Nixie One', cursive;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+   .banner {
+        display: flex;
+        margin-top: -10%;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   .left-column, .right-column {
+        flex-basis: 50%;
+    }
+    
+    .right-column {
+        width: 90%;
+        text-align: right;
+        margin-top: 0px;
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+    }
+    
+    .left-column {
+        width: 70%;
+        text-align: left;
+        margin-left: 0;
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+        position: relative;
+    }
+    
+    .right-column h1, .left-column h1 {
+        font-size: 32px;
+    }
+    
+    .right-column h3, .left-column h3 {
+        font-size: 21px;
+    }
+
+    .left,
+    .right {
+        text-decoration: none;
+        color: rgb(218, 218, 218);
+        cursor: pointer;
+    }
+
+    .left:hover:after, .right:hover:after {
+        content: '';
+        border: solid rgb(218, 218, 218);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: 0.9s;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img11, .img12, .img13, .img21, .img22, .img23, .img31, .img32, .img33 {
+        width: 95%;
+        height: 80%;
+        align-self: center;
+        margin-left: 4%;
+    }
+
+    .section51 {
+        align-content: center;
+        text-align: center;
+    }
+
+    .section61 h1 {
+        font-family: 'Nixie One', cursive;
+        margin: 35px;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: 40px;
+    }
+    
+    .section61 h1::after {
+        content: '';
+        width: 7%;
+        height: 3px;
+        background-color: rgb(34, 92, 1);
+        transition: 0.6s;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -30%;
+    }
+    
+    .facebook,
+    .instagram,
+    .twitter {
+        width: 40px;
+        height: auto;
+        margin-left: 15px;
+        margin-top: 20px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: center;
+    }
+    
+    .contact-us {
+        width: 100%;
+        text-align: center;
+        padding: 0px 0px;
+    }
+    
+    .contact-us h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 27px;
+        font-weight: 500;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    
+    .contact-us h2::after {
+        content: '';
+        width: 10%;
+        height: 2px;
+        background-color: rgb(34, 92, 1);
+        transition: 0.6s;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -20%;
+    }
+    
+    .contact-us h6 {
+        font-size: 15px;
+        font-style: italic;
+        font-family: 'Nixie One', cursive;
+        margin: 25px 2px;
+    }
+    
+    .contact-us p {
+        font-size: 15px;
+        margin: 12px 3px;
+    }
+    
+    .email-order {
+        color: rgb(34, 92, 1);
+        font-family: 'Nixie One', cursive;
+        font-weight: bolder;
+        font-size: 1.2rem;
+    }
+
+    address {
+        margin: 20px 0px;
+        font-size: 1.1rem;
+    }
+
+    .phone {
+        color: rgb(34, 92, 1);
+        font-family: 'Nixie One', cursive;
+        font-weight: bolder;
+        font-size: 1.1rem;
+        text-decoration: none;
+    }
+
+    .mail-button {
+        margin-top: 24px;
+    }
+
+    #button {
+        padding: 15px 30px;
+        background-color: rgb(34, 92, 1);
+        color: #f2f2f2;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-family: 'Nixie One', cursive;
+        font-size: 13px;
+        font-weight: bolder;
+        margin: auto;
+    }
+
+    #button:hover {
+        opacity: .9;
+    }
+
+    .vertical-line {
+        border: 1px dashed rgb(34, 92, 1);
+        height: 1%;
+        margin: 10% 0px;
+        width: 100%;
+    }
+
+
+    .form {
+        text-align: center;
+    }
+
+    #Full-Name, #email, #messages {
+        width: 45%;
+        padding: 14px 0px;
+        margin-top: 3px;
+    }
+
+    #phone {
+        width: 67%;
+        padding: 14px 0px;
+        margin-top: 3px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 20px;
+    }
+
+
+    #submit {
+        padding: 12px 28px;
+        color: #000;
+        background-color: #ff4545;
+        border: 1px solid #ff454569;
+        font-size: 16px;
+        font-family: 'Work Sans', sans-serif;
+        border-radius: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+        width: 45%;
+        margin-bottom: 3%;
+    }
+    
+    #reset {
+        padding: 12px 28px;
+        background-color: #000;
+        color: #ff4545;
+        font-size: 16px;
+        border: 1px solid #0000003f;
+        font-family: 'Work Sans', sans-serif;
+        border-radius: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+        width: 45%;
+    }
+
+    .section7 h2 {
+        font-family: 'Nixie One', cursive;
+        margin: 20px;
+        font-size: 22px;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: 10px;
+        text-decoration: #ff4545 overline;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .foot ul li a{
+        text-decoration: none;
+        color: #f2f2f2;
+        font-size: 12px;
+        font-family: 'Nixie One', cursive;
+    }
+
+    
+
+    .copy {
+        display: flex;
+        flex-direction: roq;
+        justify-content: space-between;
+        text-align: center;
+        align-items: flex-end;
+        font-size: 9px;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    .dev {
+        display: flex;
+        font-size: 12px;
+        font-weight: 800;
+        color: #ff4545;
+        font-family: 'Nixie One', cursive;
+        text-decoration: none;
+    }
+
+    .section3, .section5 {
+        padding-bottom: 40px;
+        background-color: rgba(0, 107, 55, 0.137);
+    }
+    
+    .section2, .section4 {
+        background-color: #f2f2f2;
+        padding-bottom: 40px;
+    }
+    
+
+}
+
+
+
+@media (max-width: 990px) and (orientation: landscape) {
+    html, body {
+        overflow-x: hidden;
+    }
+    #toggle-button {
+        display: flex;
+        width: 27px;
+        height: 21px;
+        color: #fff;
+        position: absolute;
+        top: 1.2rem;
+        right: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px;
+        color: #fff;
+        display: inline-block;
+        background-color: rgb(218, 218, 218);
+    }
+
+    header {
+        width: 100%;
+        height: 90vh;
+        background: linear-gradient( rgba(43, 45, 56, 0.5), rgba(43, 45, 56, 0.5)), url(makeup.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    span {
+        color: #f19;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    
+    nav h1 {
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .navbar-links ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        text-transform: uppercase;
+        display: none;
+        align-content: center;
+    }
+    
+
+    .navbar {
+        text-decoration: none;
+        margin: 5% 0px;
+        padding: 5px 0px;
+        list-style: none;
+        letter-spacing: normal;
+        line-height: 20px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        font-family: 'Nixie One', cursive;
+        font-weight: 900;
+        color: rgb(218, 218, 218);
+        font-size: 17px;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .navbar a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: #f19;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -25%;
+        transition: 0.5s;
+    }
+    
+    .navbar a:hover::after {
+        width: 100%;
+    }
+
+    #navlist {
+        margin: auto;
+    }
+    .search {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 55%;
+        margin-top: 10px;
+        margin: auto;
+    }
+
+    .search .btn {
+        width: 100%;
+    }
+
+    .texts {
+        outline: none;
+        opacity: 0.7;
+        padding: 7px 7px;
+        width: 100%;
+        background-color: rgba(43, 45, 56, 0.5);
+        color: #fff;
+        font-size: 13px;
+    }
+   
+   input[type=button] {
+        padding: 7px 14px;
+        color: rgb(218, 218, 218);
+        outline: none;
+        background: rgba(43, 45, 56, 0.9);
+        opacity: 0.9;
+        font-family: 'Nixie One', cursive;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+   .banner {
+        display: flex;
+        margin-top: -10%;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+   .left-column, .right-column {
+        flex-basis: 50%;
+    }
+    
+    .right-column {
+        width: 100%;
+        text-align: right;
+        margin-top: 0px;
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+        position: relative;
+    }
+    
+    .left-column {
+        width: 100%;
+        text-align: left;
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+        position: relative;
+        align-content: center;
+    }
+    
+    .right-column h1, .left-column h1 {
+        font-size: 32px;
+    }
+    
+    .right-column h3, .left-column h3 {
+        font-size: 21px;
+    }
+
+    .left,
+    .right {
+        text-decoration: none;
+        color: rgb(218, 218, 218);
+        cursor: pointer;
+    }
+
+    .left:hover:after, .right:hover:after {
+        content: '';
+        border: solid rgb(218, 218, 218);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: 0.9s;
+    }
+
+    .images {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img11, .img12, .img13, .img21, .img22, .img23, .img31, .img32, .img33 {
+        width: 60%;
+        height: 350px;
+        align-self: center;
+        margin-left: 22.5%;
+    }
+
+    .section51 {
+        align-content: center;
+        text-align: center;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    #Full-Name, #email, #messages {
+        width: 80%;
+        padding: 14px 0px;
+        margin-top: 3px;
+        font-size: 15px;
+    }
+
+    #phone {
+        width: 75%;
+        padding: 14px 0px;
+        margin-top: 3px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-top: 20px;
+    }
+
+
+    #submit {
+        padding: 14px 28px;
+        color: #000;
+        background-color: #ff4545;
+        border: 1px solid #ff454569;
+        font-size: 16px;
+        font-family: 'Work Sans', sans-serif;
+        border-radius: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+        width: 80%;
+        margin-bottom: 3%;
+    }
+    
+    #reset {
+        padding: 14px 28px;
+        background-color: #000;
+        color: #ff4545;
+        font-size: 16px;
+        border: 1px solid #0000003f;
+        font-family: 'Work Sans', sans-serif;
+        border-radius: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+        width: 80%;
+    }
+
+    .mail-button {
+        margin-top: 18%;
+    }
+
+    #button {
+        padding: 15px 30px;
+        background-color: rgb(34, 92, 1);
+        color: #f2f2f2;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-family: 'Nixie One', cursive;
+        font-size: 13px;
+        font-weight: bolder;
+        margin: auto;
+    }
+
+    #button:hover {
+        opacity: .9;
+    }
+
+    .section7 h2 {
+        font-family: 'Nixie One', cursive;
+        margin: 20px;
+        font-size: 30px;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: 10px;
+        text-decoration: #ff4545 overline;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .foot ul li a{
+        text-decoration: none;
+        color: #f2f2f2;
+        font-size: 13px;
+        font-family: 'Nixie One', cursive;
+    }
+
+    .copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: justify;
+        align-items: flex-end;
+        font-size: 10px;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    .dev {
+        display: flex;
+        font-size: 13px;
+        font-weight: 800;
+        color: #ff4545;
+        font-family: 'Nixie One', cursive;
+        text-decoration: none;
+    }
+
+    .section3, .section5 {
+        padding-bottom: 30px;
+        background-color: rgba(0, 107, 55, 0.137);
+    }
+    
+    .section2, .section4 {
+        background-color: #f2f2f2;
+        padding-bottom: 30px;
+    }
+}
+
+
+@media (min-width: 576.5px) and (max-width: 1024px) {
+    html, body {
+        overflow-x: hidden;
+    }
+    #toggle-button {
+        display: flex;
+        width: 27px;
+        height: 21px;
+        color: #fff;
+        position: absolute;
+        top: 1.2rem;
+        right: 4%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 100%;
+        height: 3px;
+        color: #fff;
+        display: inline-block;
+        background-color: rgb(218, 218, 218);
+    }
+
+    header {
+        width: 100%;
+        height: 60vh;
+        background: linear-gradient( rgba(43, 45, 56, 0.5), rgba(43, 45, 56, 0.5)), url(makeup.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px 10px;
+    }
+
+    span {
+        color: #f19;
+        font-size: 28px;
+        font-weight: 300;
+    }
+    
+    nav h1 {
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+    }
+
+    header nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    .navbar-links ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        text-transform: uppercase;
+        display: none;
+        align-content: center;
+    }
+    
+
+    .navbar {
+        text-decoration: none;
+        margin: 5% 0px;
+        padding: 5px 0px;
+        list-style: none;
+        letter-spacing: normal;
+        line-height: 20px;
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        font-family: 'Nixie One', cursive;
+        font-weight: 900;
+        color: rgb(218, 218, 218);
+        font-size: 17px;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .navbar a::after {
+        content: '';
+        width: 0;
+        height: 3px;
+        background-color: #f19;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -25%;
+        transition: 0.5s;
+    }
+    
+    .navbar a:hover::after {
+        width: 100%;
+    }
+
+    #navlist {
+        margin: auto;
+    }
+
+    .search {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 55%;
+        margin-top: 10px;
+        margin: auto;
+    }
+
+    .search .btn {
+        width: 100%;
+    }
+
+    .texts {
+        outline: none;
+        opacity: 0.7;
+        padding: 7px 7px;
+        width: 100%;
+        background-color: rgba(43, 45, 56, 0.5);
+        color: #fff;
+        font-size: 13px;
+    }
+   
+   input[type=button] {
+        padding: 7px 14px;
+        color: rgb(218, 218, 218);
+        outline: none;
+        background: rgba(43, 45, 56, 0.9);
+        opacity: 0.9;
+        font-family: 'Nixie One', cursive;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+
+   .banner {
+        display: flex;
+        margin-top: 10%;
+        text-align: center;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+    }
+
+   .left-column, .right-column {
+        flex-basis: 50%;
+    }
+    
+    .right-column {
+        width: 100%;
+        text-align: right;
+        margin-top: 0px;
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+        position: relative;
+    }
+    
+    .left-column {
+        width: 100%;
+        text-align: left;
+        font-family: 'Nixie One', cursive;
+        color: rgb(218, 218, 218);
+        position: relative;
+        align-content: center;
+    }
+    
+    .right-column h1, .left-column h1 {
+        font-size: 32px;
+    }
+    
+    .right-column h3, .left-column h3 {
+        font-size: 21px;
+    }
+
+    .left,
+    .right {
+        text-decoration: none;
+        color: rgb(218, 218, 218);
+        cursor: pointer;
+    }
+
+    .left:hover:after, .right:hover:after {
+        content: '';
+        border: solid rgb(218, 218, 218);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: 0.9s;
+    }
+
+    .images {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img11, .img12, .img13, .img21, .img22, .img23, .img31, .img32, .img33 {
+        width: 100%;
+        height: 250px;
+        align-self: center;
+        margin-left: 0%;
+    }
+
+    .section51 {
+        align-content: center;
+        text-align: center;
+    }
+
+    .form {
+        text-align: center;
+    }
+
+    #Full-Name, #email, #messages {
+        width: 80%;
+        padding: 14px 0px;
+        margin-top: 3px;
+        font-size: 15px;
+    }
+
+    #phone {
+        width: 75%;
+        padding: 14px 0px;
+        margin-top: 3px;
+    }
+
+    .button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        margin-top: 20px;
+    }
+
+
+    #submit {
+        padding: 14px 28px;
+        color: #000;
+        background-color: #ff4545;
+        border: 1px solid #ff454569;
+        font-size: 16px;
+        font-family: 'Work Sans', sans-serif;
+        border-radius: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+        width: 80%;
+        margin-bottom: 3%;
+    }
+    
+    #reset {
+        padding: 14px 28px;
+        background-color: #000;
+        color: #ff4545;
+        font-size: 16px;
+        border: 1px solid #0000003f;
+        font-family: 'Work Sans', sans-serif;
+        border-radius: 10px;
+        font-weight: bolder;
+        cursor: pointer;
+        width: 80%;
+    }
+
+    .mail-button {
+        margin-top: 18%;
+    }
+
+    #button {
+        padding: 15px 30px;
+        background-color: rgb(34, 92, 1);
+        color: #f2f2f2;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-family: 'Nixie One', cursive;
+        font-size: 13px;
+        font-weight: bolder;
+        margin: auto;
+    }
+
+    #button:hover {
+        opacity: .9;
+    }
+
+    .section7 h2 {
+        font-family: 'Nixie One', cursive;
+        margin: 20px;
+        font-size: 30px;
+        font-weight: 900;
+        position: relative;
+        margin-bottom: 10px;
+        text-decoration: #ff4545 overline;
+    }
+
+    .foot {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        padding: 20px;
+    }
+
+    .foot ul li a{
+        text-decoration: none;
+        color: #f2f2f2;
+        font-size: 13px;
+        font-family: 'Nixie One', cursive;
+    }
+
+    .copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: justify;
+        align-items: flex-end;
+        font-size: 10px;
+        font-family: 'Nixie One', cursive;
+    }
+    
+    .dev {
+        display: flex;
+        font-size: 13px;
+        font-weight: 800;
+        color: #ff4545;
+        font-family: 'Nixie One', cursive;
+        text-decoration: none;
+    }
+
+    .section3, .section5 {
+        padding-bottom: 40px;
+        background-color: rgba(0, 107, 55, 0.137);
+    }
+    
+    .section2, .section4 {
+        background-color: #f2f2f2;
+        padding-bottom: 40px;
+    }
+}
+
+
+
+
