@@ -59,9 +59,3 @@ function showSlide(n) {
 
 
 
-
-//Toggle Button
-
-
-
-
